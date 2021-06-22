@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg="A Shitty Christian's Blog: Musings on Movies and Messiahs"/>
 </template>
 
 <script>
@@ -20,7 +20,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: cornsilk;
   margin-top: 60px;
+  background-color: #2c3e50;
 }
 </style>
