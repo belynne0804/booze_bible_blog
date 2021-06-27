@@ -2,22 +2,21 @@
   <Nav/>
   <img class="logo" src="./assets/movieReel.png">
   <img class="logo" src="./assets/book.png">
-  <HelloWorld msg="A Shitty Christian's Blog: Musings on Movies and Messiahs">
-    <Main/>
-  </HelloWorld>
+  <HelloWorld msg="A Shitty Christian's Blog: Musings on Movies and Messiahs"/>
+  <Footer/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Nav from "./components/Nav.vue";
-import Main from './components/Main.vue'
+import Footer from "./components/Footer.vue";
 
 export default {
   name: 'App',
   components: {
     Nav,
-    HelloWorld, 
-    Main
+    HelloWorld,
+    Footer
   }
 }
 </script>
@@ -29,7 +28,7 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: cornsilk;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     background-color: #227f9f;
   }
   .logo {

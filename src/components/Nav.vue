@@ -57,7 +57,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-    * {
-        padding-right: 0 !important;
-    }
 </style>
