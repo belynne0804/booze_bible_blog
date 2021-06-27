@@ -1,6 +1,8 @@
 # movie_blog
 These are reflections by a crappy Christian mid-deconstruction about the intersection of movies and Christian themes. 
-I still deeply love, and am fascinated by, Jesus, so a strong focus on messianic archetrypes in film follows. 
+I still deeply love, and am fascinated by, Jesus, so a strong focus on messianic archetypes in film follows. 
+
+I'm a budding developer, so this is also a platform to practice VueJS and front-end dev skills.
 
 ## Project setup
 ```
