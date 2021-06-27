@@ -1,10 +1,7 @@
 <template>
-<Main>
-  <div class="main-content">
-    <h3>This is the main content!</h3>
-  </div>
-
-</Main>
+    <div class="main-content">
+        <h3>This is the main content section!</h3>
+    </div>
 </template>
 
 <script>
@@ -15,8 +12,6 @@ export default {
 
 <style>
     .main-content {
-        height: 500px;
-        width: 1000px;
         background-color: hotpink;
     }
 </style>
