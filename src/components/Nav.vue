@@ -34,7 +34,7 @@ export default {
             ],
             navConfig: {
                 whitespace: false, /* GIVES PADDING TO YOUR NAV, IF SET TO FALSE, REMOVES PADDING */
-                navBg: "#229F70", /* BACKGROUND COLOR OF YOUR NAV  */
+                navBg: "#001b3b", /* BACKGROUND COLOR OF YOUR NAV  */
                 // navBorderRadius: "30px", /* BORDER RADIUS OF YOUR NAV */
                 linkFont: "Avenir", /* FONT FAMILY OF YOUR NAV */
                 linkColor: "white", /* FONT COLOR OF YOUR NAV */
@@ -56,5 +56,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+    * {
+        padding-right: 0 !important;
+    }
 </style>
