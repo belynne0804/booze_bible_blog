@@ -1,4 +1,5 @@
 <template>
+  <Nav/>
   <img class="logo" src="./assets/movieReel.png">
   <img class="logo" src="./assets/book.png">
   <HelloWorld msg="A Shitty Christian's Blog: Musings on Movies and Messiahs"/>
@@ -6,11 +7,13 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Nav from "./components/Nav.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Nav,
+    HelloWorld, 
   }
 }
 </script>
@@ -22,9 +25,8 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: cornsilk;
-    margin: 20px;
     padding-bottom: 20px;
-    background-color: black;
+    background-color: #227f9f;
   }
   .logo {
     height: 100px; 
