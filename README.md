@@ -1,4 +1,7 @@
 # movie_blog
+```
+These are reflections by a crappy Christian mid-deconstruction about the intersection of movies and Christian themes. I still deeply love, and am fascinated by, Jesus, so a strong focus on messianic archetrypes in film follows. 
+```
 
 ## Project setup
 ```
