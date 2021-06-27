@@ -2,18 +2,22 @@
   <Nav/>
   <img class="logo" src="./assets/movieReel.png">
   <img class="logo" src="./assets/book.png">
-  <HelloWorld msg="A Shitty Christian's Blog: Musings on Movies and Messiahs"/>
+  <HelloWorld msg="A Shitty Christian's Blog: Musings on Movies and Messiahs">
+    <Main/>
+  </HelloWorld>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Nav from "./components/Nav.vue";
+import Main from './components/Main.vue'
 
 export default {
   name: 'App',
   components: {
     Nav,
     HelloWorld, 
+    Main
   }
 }
 </script>
