@@ -17,7 +17,6 @@ export default {
   },
   data(){
         return {
-            /* FOR YOUR NAVIGATION LINKING NAMES AND PATHS */ 
             navLinks: [
                 {
                     name: "Home",
