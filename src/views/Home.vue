@@ -1,8 +1,18 @@
 <template>
   <div class="home">
-    <img src="../assets/movieReel.png">
+    <Content></Content>
   </div>
 </template>
 
 <script>
+import Content from '../components/Content.vue'
+
+export default {
+  components: {
+    Content
+  }
+}
 </script>
+
+<style>
+</style>
