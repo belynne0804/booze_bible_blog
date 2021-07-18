@@ -1,6 +1,6 @@
 <template>
     <div class="w3-container">
-      <h2>Displaying Colors</h2>
+      <h1>Stuff about me...</h1>
     </div>
 </template>
 

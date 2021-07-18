@@ -20,7 +20,7 @@
     background-color: #ABBDCF;
     margin: 1em;
     padding-top: 10px;
-    border: 10px solid #000222;
+    border: 5px solid #090d10;
 }
 
 .content-header {

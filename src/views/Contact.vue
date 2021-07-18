@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <h1>Don't hesitate to get in touch with me!</h1>
+    <h1 class="contact-header">Don't hesitate to get in touch.</h1>
     <label for="fname">First Name</label>
       <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -26,6 +26,11 @@
 </script>
 
 <style>
+
+  .contact-header {
+    color: #ffff66; 
+  }
+
   input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
