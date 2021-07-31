@@ -1,27 +1,66 @@
 <template>
+<form 
+  @submit="submitForm"
+>  
   <div class="contact">
     <h1 class="contact-header">Don't hesitate to get in touch.</h1>
     <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <input v-model="form.fname" type="text" id="fname" name="firstname" placeholder="Your name..">
 
       <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <input v-model="form.lname" type="text" id="lname" name="lastname" placeholder="Your last name..">
 
       <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
+        <select v-model="form.country" id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
 
       <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <textarea v-model="form.subject" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
       <input type="submit" value="Submit">
   </div>
+  </form>
 </template>
 
 <script>
+
+export default {
+    name: 'Contact',
+    mounted() {
+        console.log('Component mounted.')
+    },
+    data(){
+        return{
+            form: {
+                fname: '',
+                lname: '',
+                country: '',
+                subject: ''
+            }
+        }
+    },
+    methods:{
+        submitForm(e) {
+          e.preventDefault();
+          let currentObj = this;
+          this.axios.post('http://localhost:8000/Contact', {
+              fname: this.fname,
+              lname: this.lname,
+              country: this.country,
+              subject: this.subject
+          })
+          .then(function (response) {
+              currentObj.output = response.data;
+          })
+          .catch(function (error) {
+              currentObj.output = error;
+          });
+      }
+    }
+}
 
 </script>
 
