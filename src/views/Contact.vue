@@ -46,7 +46,7 @@ export default {
         submitForm(e) {
           e.preventDefault();
           let currentObj = this;
-          this.axios.post('http://localhost:8000/Contact', {
+          this.axios.post('/Contact-Mailer.php', {
               fname: this.fname,
               lname: this.lname,
               country: this.country,
