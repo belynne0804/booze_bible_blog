@@ -1,15 +1,19 @@
 <template>
   <div class="home">
-    <Content></Content>
+    <Content>
+      <Post/>
+    </Content>
   </div>
 </template>
 
 <script>
 import Content from '../components/Content.vue'
+import Post from '../views/Post.vue' 
 
 export default {
   components: {
-    Content
+    Content, 
+    Post
   }
 }
 </script>
