@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "buttercms": "^1.2.7",
     "core-js": "^3.6.5",
     "resource": "^0.8.1",
     "vue": "^3.1.5",
