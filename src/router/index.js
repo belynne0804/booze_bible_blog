@@ -1,7 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Butter from 'buttercms';
-const butter = Butter('324a2784fba00d109ce287e7efddd916a79a6d91'); // my api_token
 
 const routes = [
   {
