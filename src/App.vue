@@ -3,12 +3,40 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/contact">Contact</router-link>
+          <a href="https://buttercms.com/">
+          </a>
   </div>
   <router-view/>
 </template>
 
 <script>
+import { butter } from '@/buttercms'
+
 export default {
+  created() {
+    this.fetchHeadline()
+    this.fetchPosts()
+  },
+
+  methods: {
+  fetchPosts() {
+    butter.post.list({
+        page: 1,
+        page_size: 10
+      })
+      .then((res) => {
+        console.log('Content from ButterCMS')
+        console.log(res)
+      })
+  },
+  fetchHeadline() {
+  butter.content.retrieve(['homepage_headline'])
+    .then((res) => {
+      console.log('Headline from ButterCMS')
+      console.log(res)
+    })
+  }
+}
 
 }
 </script>

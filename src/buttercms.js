@@ -1,2 +1,2 @@
 import Butter from 'buttercms';
-export const butter = Butter('your_api_token');
+export const butter = Butter('shitty_christian_movie_blog');
