@@ -27,38 +27,32 @@
 
 <script>
 
+var emailRegExp = /^[a-zA-Z0-9.!#$%&'*+=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+
 export default {
     name: 'Contact',
-    mounted() {
-        console.log('Component mounted.')
+    data: function() {
+      return {
+      name: "Amy Johnson",
+      email: {
+        value: "amy.dixon@rocky.edu",
+        valid: true
+      },
+      message: {
+        text: `Dear Miss Amy ,\n...`,
+        maxlength: 255
+      },
+      submitted: false
+    };
     },
-    data(){
-        return{
-            form: {
-                fname: '',
-                lname: '',
-                country: '',
-                subject: ''
-            }
-        }
-    },
-    methods:{
-        submitForm(e) {
-          e.preventDefault();
-          let currentObj = this;
-          this.axios.post('/Contact-Mailer.php', {
-              fname: this.fname,
-              lname: this.lname,
-              country: this.country,
-              subject: this.subject
-          })
-          .then(function (response) {
-              currentObj.output = response.data;
-          })
-          .catch(function (error) {
-              currentObj.output = error;
-          });
+    methods: {
+      //check for valid email
+      isValidEmail: function(emailToTest) {
+        return emailRegExp.test(emailToTest);
       }
+
+    }, watch: {
+
     }
 }
 
